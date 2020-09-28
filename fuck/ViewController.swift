@@ -23,7 +23,7 @@ class ViewController: UIViewController{
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    override func viewDidAppear(_ animated: Bool) {
+   /* override func viewDidAppear(_ animated: Bool) {
         let userDefaults = UserDefaults.standard
         let isLogined = userDefaults.value(forKey: "isLogined") as? Bool
         //if isLogined != nil && isLogined! {
@@ -33,7 +33,7 @@ class ViewController: UIViewController{
             let logVC = self.storyboard?.instantiateViewController(withIdentifier: "PersonalAccount")
             present(logVC!, animated: true, completion: nil)
         //}
-    }
+    }*/
 
 }
 

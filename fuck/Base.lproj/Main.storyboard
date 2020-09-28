@@ -23,14 +23,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Qec-UE-2DI"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="QlJ-f3-mYG"/>
+                    <tabBarItem key="tabBarItem" title="AR" image="camera" catalog="system" selectedImage="camera.fill" id="QlJ-f3-mYG"/>
                     <navigationItem key="navigationItem" id="W0W-40-zsu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uuq-0h-N5V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-156" y="-959.37031484257875"/>
         </scene>
-        <!--Item 1-->
+        <!--main-->
         <scene sceneID="Hx9-7k-Dv5">
             <objects>
                 <viewController id="cNy-uC-GIw" customClass="TViewController" customModule="fuck" customModuleProvider="target" sceneMemberID="viewController">
@@ -83,7 +83,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Gfg-da-XXw"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="OW7-sq-C5r"/>
+                    <tabBarItem key="tabBarItem" title="main" image="heart" catalog="system" selectedImage="suit.heart.fill" id="OW7-sq-C5r"/>
                     <connections>
                         <outlet property="listTableView" destination="xfe-ps-oll" id="Bgg-oH-XZE"/>
                         <outlet property="view" destination="xfe-ps-oll" id="kbq-kC-A44"/>
@@ -301,4 +301,10 @@
             <point key="canvasLocation" x="1017" y="107"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="camera" catalog="system" width="64" height="48"/>
+        <image name="camera.fill" catalog="system" width="64" height="48"/>
+        <image name="heart" catalog="system" width="64" height="54"/>
+        <image name="suit.heart.fill" catalog="system" width="64" height="54"/>
+    </resources>
 </document>

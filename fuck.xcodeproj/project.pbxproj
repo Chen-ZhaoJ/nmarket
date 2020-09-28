@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D528DB52522018500716C12 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D528DB42522018500716C12 /* TabBarController.swift */; };
 		1D9047A9251910CC00798359 /* TViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9047A8251910CC00798359 /* TViewController.swift */; };
 		1D9047B6251C92F600798359 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D9047B4251C92F600798359 /* Main.storyboard */; };
 		B01C74402521D35E00F3BCA6 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C743F2521D35E00F3BCA6 /* HomeModel.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D528DB42522018500716C12 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		1D9047A8251910CC00798359 /* TViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TViewController.swift; sourceTree = "<group>"; };
 		1D9047B5251C92F600798359 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B01C743F2521D35E00F3BCA6 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				B07DF0542484EE2F00B3E5F9 /* ResetPassword.swift */,
 				B01C743F2521D35E00F3BCA6 /* HomeModel.swift */,
 				B01C74412521D41D00F3BCA6 /* LocationModel.swift */,
+				1D528DB42522018500716C12 /* TabBarController.swift */,
 			);
 			path = fuck;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				B07DF0552484EE2F00B3E5F9 /* ResetPassword.swift in Sources */,
 				1D9047A9251910CC00798359 /* TViewController.swift in Sources */,
 				B07DF0232484ED0900B3E5F9 /* ViewController.swift in Sources */,
+				1D528DB52522018500716C12 /* TabBarController.swift in Sources */,
 				B07DF0512484EDE700B3E5F9 /* PersonalAccount.swift in Sources */,
 				B01C74422521D41D00F3BCA6 /* LocationModel.swift in Sources */,
 				B01C74402521D35E00F3BCA6 /* HomeModel.swift in Sources */,
