@@ -21,5 +21,5 @@ class HomeModel: NSObject, URLSessionDataDelegate {
     
     var data = Data()
     
-    let urlPath: String = "http://hourofswift.com/service.php" //this will be changed to the path where service.php lives
+    let urlPath: String = "http://163.21.245.137/~u10616001/service.php" //this will be changed to the path where service.php lives
 }
