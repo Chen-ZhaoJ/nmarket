@@ -10,6 +10,9 @@
 		1D528DB52522018500716C12 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D528DB42522018500716C12 /* TabBarController.swift */; };
 		1D9047A9251910CC00798359 /* TViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9047A8251910CC00798359 /* TViewController.swift */; };
 		1D9047B6251C92F600798359 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D9047B4251C92F600798359 /* Main.storyboard */; };
+		4069A6942528D3BB00C74853 /* StoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4069A6932528D3BB00C74853 /* StoreTableViewController.swift */; };
+		408F3D7A25226DC100A136E5 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408F3D7925226DC100A136E5 /* ARViewController.swift */; };
+		40AB25232526EDB80039E4D2 /* TViewDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AB25222526EDB80039E4D2 /* TViewDetailViewController.swift */; };
 		B01C74402521D35E00F3BCA6 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C743F2521D35E00F3BCA6 /* HomeModel.swift */; };
 		B01C74422521D41D00F3BCA6 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C74412521D41D00F3BCA6 /* LocationModel.swift */; };
 		B07DF01F2484ED0900B3E5F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07DF01E2484ED0900B3E5F9 /* AppDelegate.swift */; };
@@ -45,6 +48,9 @@
 		1D528DB42522018500716C12 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		1D9047A8251910CC00798359 /* TViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TViewController.swift; sourceTree = "<group>"; };
 		1D9047B5251C92F600798359 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4069A6932528D3BB00C74853 /* StoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreTableViewController.swift; sourceTree = "<group>"; };
+		408F3D7925226DC100A136E5 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		40AB25222526EDB80039E4D2 /* TViewDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TViewDetailViewController.swift; sourceTree = "<group>"; };
 		B01C743F2521D35E00F3BCA6 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		B01C74412521D41D00F3BCA6 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		B07DF01B2484ED0900B3E5F9 /* fuck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fuck.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +124,7 @@
 				B07DF0202484ED0900B3E5F9 /* SceneDelegate.swift */,
 				B07DF0222484ED0900B3E5F9 /* ViewController.swift */,
 				1D9047A8251910CC00798359 /* TViewController.swift */,
+				40AB25222526EDB80039E4D2 /* TViewDetailViewController.swift */,
 				B07DF0272484ED0900B3E5F9 /* Assets.xcassets */,
 				B07DF0292484ED0900B3E5F9 /* LaunchScreen.storyboard */,
 				B07DF02C2484ED0A00B3E5F9 /* Info.plist */,
@@ -127,6 +134,8 @@
 				B01C743F2521D35E00F3BCA6 /* HomeModel.swift */,
 				B01C74412521D41D00F3BCA6 /* LocationModel.swift */,
 				1D528DB42522018500716C12 /* TabBarController.swift */,
+				408F3D7925226DC100A136E5 /* ARViewController.swift */,
+				4069A6932528D3BB00C74853 /* StoreTableViewController.swift */,
 			);
 			path = fuck;
 			sourceTree = "<group>";
@@ -283,6 +292,7 @@
 				B07DF0552484EE2F00B3E5F9 /* ResetPassword.swift in Sources */,
 				1D9047A9251910CC00798359 /* TViewController.swift in Sources */,
 				B07DF0232484ED0900B3E5F9 /* ViewController.swift in Sources */,
+				4069A6942528D3BB00C74853 /* StoreTableViewController.swift in Sources */,
 				1D528DB52522018500716C12 /* TabBarController.swift in Sources */,
 				B07DF0512484EDE700B3E5F9 /* PersonalAccount.swift in Sources */,
 				B01C74422521D41D00F3BCA6 /* LocationModel.swift in Sources */,
@@ -290,6 +300,8 @@
 				B07DF01F2484ED0900B3E5F9 /* AppDelegate.swift in Sources */,
 				B07DF0212484ED0900B3E5F9 /* SceneDelegate.swift in Sources */,
 				B07DF0532484EE1200B3E5F9 /* Register.swift in Sources */,
+				408F3D7A25226DC100A136E5 /* ARViewController.swift in Sources */,
+				40AB25232526EDB80039E4D2 /* TViewDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,12 +475,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HH9B8YYLGA;
 				INFOPLIST_FILE = fuck/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = fuck.fuck;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuwei.fuck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -480,12 +494,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HH9B8YYLGA;
 				INFOPLIST_FILE = fuck/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = fuck.fuck;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuwei.fuck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

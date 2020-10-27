@@ -13,28 +13,22 @@ class TViewController: UIViewController,UITableViewDataSource,UITableViewDelegat
     var restaurantNames = ["jj","pp"]
 
     @IBOutlet weak var listTableView: UITableView!
+    //how many cells(dataSource)
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         return restaurantNames.count
     }
-    
+    //Delegate
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellIdentifier = "datacell"
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
         cell.textLabel?.text = restaurantNames[indexPath.row]
+        cell.accessoryType = .disclosureIndicator //小圖標
         return cell
     }
-   
-
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
-    
-
     /*
     // MARK: - Navigation
 
