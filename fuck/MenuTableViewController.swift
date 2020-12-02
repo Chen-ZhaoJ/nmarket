@@ -8,24 +8,7 @@
 
 import UIKit
 
-class StoreTableViewController: UITableViewController {
-
-    var count = 1
-    @IBAction func rankbutton(_ sender: Any) {
-        count = 2
-    }
-    @IBAction func commendbutton(_ sender: Any) {
-        count = 3
-    }
-    @IBAction func menubutton(_ sender: Any) {
-        count = 1
-    }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
+class MenuTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -36,21 +19,9 @@ class StoreTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if(count == 1){
             let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath)
             cell.textLabel?.text = "測試標題 \(indexPath.row)"
             return cell
-        }
-        else if(count == 2){
-            let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath)
-            cell.textLabel?.text = "測試標題 \(indexPath.row + 1)"
-            return cell
-        }
-        else{
-            let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath)
-            cell.textLabel?.text = "測試標題 \(indexPath.row + 2)"
-            return cell
-        }
     }
 
     /*
@@ -69,7 +40,7 @@ class StoreTableViewController: UITableViewController {
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+        }
     }
     */
 

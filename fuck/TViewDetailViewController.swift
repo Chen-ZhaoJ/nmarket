@@ -10,44 +10,20 @@ import UIKit
 
 class TViewDetailViewController: UIViewController {
     var selectedButton: UIButton!
-    @IBOutlet weak var menupage: UIButton!
-    @IBOutlet weak var rankpage: UIButton!
-    @IBOutlet weak var commendpage: UIButton!
-    
-    @IBAction func showmenu(_ sender: Any) {
-        changeTab(to: menupage)
-    }
-    @IBAction func showrank(_ sender: Any) {
-        changeTab(to: rankpage)
-    }
-    @IBAction func showcommend(_ sender: Any) {
-        changeTab(to: commendpage)
+    @IBOutlet var containerViews: [UIView]!
+    @IBOutlet weak var change: UISegmentedControl!
+    @IBAction func changePage(_ sender: UISegmentedControl) {
+        for containerView in containerViews {
+           containerView.isHidden = true
+        }
+        containerViews[sender.selectedSegmentIndex].isHidden = false
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        selectedButton = menupage
+        containerViews[0].isHidden = false
+        containerViews[1].isHidden = true
     }
-    func changeTab(to newButton: UIButton) {
-        // 先利用 tintColor 取得 Button 預設的文字顏色
-        let defaultColor = selectedButton.tintColor
-        // 將目前選取的按鈕改成未選取的顏色
-        if #available(iOS 13.0, *) {
-            selectedButton.backgroundColor = UIColor.opaqueSeparator
-        } else {
-            // Fallback on earlier versions
-        }
-        selectedButton.setTitleColor(defaultColor, for: .normal)
-        // 將參數傳來的新按鈕改成選取的顏色
-        newButton.backgroundColor = UIColor.white
-        if #available(iOS 13.0, *) {
-            newButton.setTitleColor(UIColor.link, for: .normal)
-        } else {
-            // Fallback on earlier versions
-        }
-        // 將目前選取的按鈕改為新的按鈕
-        selectedButton = newButton
-    }
-    
+
     /*
     // MARK: - Navigation
 
