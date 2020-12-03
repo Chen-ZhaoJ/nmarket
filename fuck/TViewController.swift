@@ -33,7 +33,7 @@ class TViewController: UIViewController,UITableViewDataSource,UITableViewDelegat
         // Get the location to be shown
         let item: LocationModel = feedItems[indexPath.row] as! LocationModel
         // Get references to labels of cell
-        cell.textLabel!.text = item.address
+        cell.textLabel!.text = item.name
         
         return cell
     }
