@@ -26,6 +26,8 @@
 		B07DF0512484EDE700B3E5F9 /* PersonalAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07DF0502484EDE700B3E5F9 /* PersonalAccount.swift */; };
 		B07DF0532484EE1200B3E5F9 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07DF0522484EE1200B3E5F9 /* Register.swift */; };
 		B07DF0552484EE2F00B3E5F9 /* ResetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07DF0542484EE2F00B3E5F9 /* ResetPassword.swift */; };
+		B0BF970F257910C500D259A9 /* Menu1Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BF970E257910C500D259A9 /* Menu1Model.swift */; };
+		B0BF9713257911D100D259A9 /* HomeMenu1Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BF9712257911D100D259A9 /* HomeMenu1Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		B07DF0502484EDE700B3E5F9 /* PersonalAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalAccount.swift; sourceTree = "<group>"; };
 		B07DF0522484EE1200B3E5F9 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		B07DF0542484EE2F00B3E5F9 /* ResetPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPassword.swift; sourceTree = "<group>"; };
+		B0BF970E257910C500D259A9 /* Menu1Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu1Model.swift; sourceTree = "<group>"; };
+		B0BF9712257911D100D259A9 /* HomeMenu1Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenu1Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,8 @@
 				408F3D7925226DC100A136E5 /* ARViewController.swift */,
 				1D2E257D257782010022502F /* MenuTableViewController.swift */,
 				98C447822578CC96003B6CD6 /* CommendTableViewController.swift */,
+				B0BF970E257910C500D259A9 /* Menu1Model.swift */,
+				B0BF9712257911D100D259A9 /* HomeMenu1Model.swift */,
 			);
 			path = fuck;
 			sourceTree = "<group>";
@@ -302,10 +308,12 @@
 				B01C74422521D41D00F3BCA6 /* LocationModel.swift in Sources */,
 				B01C74402521D35E00F3BCA6 /* HomeModel.swift in Sources */,
 				B07DF01F2484ED0900B3E5F9 /* AppDelegate.swift in Sources */,
+				B0BF970F257910C500D259A9 /* Menu1Model.swift in Sources */,
 				B07DF0212484ED0900B3E5F9 /* SceneDelegate.swift in Sources */,
 				B07DF0532484EE1200B3E5F9 /* Register.swift in Sources */,
 				408F3D7A25226DC100A136E5 /* ARViewController.swift in Sources */,
 				40AB25232526EDB80039E4D2 /* TViewDetailViewController.swift in Sources */,
+				B0BF9713257911D100D259A9 /* HomeMenu1Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
