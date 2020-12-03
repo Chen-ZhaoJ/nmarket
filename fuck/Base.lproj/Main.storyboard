@@ -395,6 +395,9 @@
                             <outlet property="delegate" destination="jZy-Ld-0Jh" id="30P-tb-kui"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="listTableView" destination="N6g-Ll-GYX" id="Tg9-mw-iQG"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iao-lT-9Ln" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

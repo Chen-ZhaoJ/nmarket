@@ -8,21 +8,40 @@
 
 import UIKit
 
-class MenuTableViewController: UITableViewController {
-    var menu = ["chicken","pp"]
+class MenuTableViewController: UITableViewController,HomeModelProtocol {
+    @IBOutlet var listTableView: UITableView!
+    var feedItems: NSArray = NSArray()
+       var selectedLocation : Menu1Model = Menu1Model()
+    func itemsDownloaded(items: NSArray) {
+        feedItems = items
+        self.listTableView.reloadData()
+    }
+    
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return menu.count
+        return feedItems.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath)
-        cell.textLabel?.text = menu[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath)
+        let item: Menu1Model = feedItems[indexPath.row] as! Menu1Model
+        cell.textLabel?.text = "菜名：" + item.name! + ", 價格：" +  item.price!
             return cell
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.listTableView.delegate = self
+        self.listTableView.dataSource = self
+        
+        let homemenu1Model = HomeMenu1Model()
+        homemenu1Model.delegate = self
+        homemenu1Model.downloadItems()
+        // Do any additional setup after loading the view.
     }
 
     /*

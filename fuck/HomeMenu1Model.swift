@@ -32,32 +32,32 @@ class HomeMenu1Model: NSObject, URLSessionDataDelegate {
         }
         
         var jsonElement = NSDictionary()
-        let locations = NSMutableArray()
+        let menus = NSMutableArray()
         
         for i in 0 ..< jsonResult.count
         {
             
             jsonElement = jsonResult[i] as! NSDictionary
             
-            let location = Menu1Model()
+            let menu = Menu1Model()
             
             //the following insures none of the JsonElement values are nil through optional binding
             if let name = jsonElement["Name"] as? String,
                 let price = jsonElement["Price"] as? String
             {
                 
-                location.name = name
-                location.price = price
+                menu.name = name
+                menu.price = price
                 
             }
             
-            locations.add(location)
+            menus.add(menu)
             
         }
         
         DispatchQueue.main.async(execute: { () -> Void in
             
-            self.delegate.itemsDownloaded(items: locations)
+            self.delegate.itemsDownloaded(items: menus)
             
         })
     }

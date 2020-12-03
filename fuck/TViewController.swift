@@ -19,7 +19,6 @@ class TViewController: UIViewController,UITableViewDataSource,UITableViewDelegat
     }
     
     
-    var restaurantNames = ["jj","pp"]
  
     @IBOutlet weak var listTableView: UITableView!
     //how many cells(dataSource)
