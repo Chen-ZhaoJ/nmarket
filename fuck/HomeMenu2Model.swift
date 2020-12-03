@@ -11,13 +11,13 @@ import Foundation
 
 
 
-class HomeMenu1Model: NSObject, URLSessionDataDelegate {
+class HomeMenu2Model: NSObject, URLSessionDataDelegate {
     var receive = 0
     //properties
     
     weak var delegate: HomeModelProtocol!
     
-    var urlPath: String = "http://163.21.245.137/~u10616001/menu1.php" //this will be changed to the path where service.php lives
+    var urlPath: String = "http://163.21.245.137/~u10616001/menu2.php" //this will be changed to the path where service.php lives
     func parseJSON(_ data:Data) {
         
         var jsonResult = NSArray()

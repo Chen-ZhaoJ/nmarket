@@ -28,6 +28,7 @@
 		B07DF0552484EE2F00B3E5F9 /* ResetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07DF0542484EE2F00B3E5F9 /* ResetPassword.swift */; };
 		B0BF970F257910C500D259A9 /* Menu1Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BF970E257910C500D259A9 /* Menu1Model.swift */; };
 		B0BF9713257911D100D259A9 /* HomeMenu1Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BF9712257911D100D259A9 /* HomeMenu1Model.swift */; };
+		B0BF971525792DD900D259A9 /* HomeMenu2Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BF971425792DD900D259A9 /* HomeMenu2Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		B07DF0542484EE2F00B3E5F9 /* ResetPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPassword.swift; sourceTree = "<group>"; };
 		B0BF970E257910C500D259A9 /* Menu1Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu1Model.swift; sourceTree = "<group>"; };
 		B0BF9712257911D100D259A9 /* HomeMenu1Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenu1Model.swift; sourceTree = "<group>"; };
+		B0BF971425792DD900D259A9 /* HomeMenu2Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenu2Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 				98C447822578CC96003B6CD6 /* CommendTableViewController.swift */,
 				B0BF970E257910C500D259A9 /* Menu1Model.swift */,
 				B0BF9712257911D100D259A9 /* HomeMenu1Model.swift */,
+				B0BF971425792DD900D259A9 /* HomeMenu2Model.swift */,
 			);
 			path = fuck;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				B07DF0232484ED0900B3E5F9 /* ViewController.swift in Sources */,
 				1D528DB52522018500716C12 /* TabBarController.swift in Sources */,
 				B07DF0512484EDE700B3E5F9 /* PersonalAccount.swift in Sources */,
+				B0BF971525792DD900D259A9 /* HomeMenu2Model.swift in Sources */,
 				B01C74422521D41D00F3BCA6 /* LocationModel.swift in Sources */,
 				B01C74402521D35E00F3BCA6 /* HomeModel.swift in Sources */,
 				B07DF01F2484ED0900B3E5F9 /* AppDelegate.swift in Sources */,

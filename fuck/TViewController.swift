@@ -36,6 +36,8 @@ class TViewController: UIViewController,UITableViewDataSource,UITableViewDelegat
         
         return cell
     }
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.listTableView.delegate = self
@@ -45,6 +47,9 @@ class TViewController: UIViewController,UITableViewDataSource,UITableViewDelegat
         homeModel.delegate = self
         homeModel.downloadItems()
         // Do any additional setup after loading the view.
+    }
+    override func awakeFromNib() {
+        super.awakeFromNib()
     }
     /*
     // MARK: - Navigation
