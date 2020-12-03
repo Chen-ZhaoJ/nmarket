@@ -24,17 +24,11 @@ class TViewController: UIViewController,UITableViewDataSource,UITableViewDelegat
     @IBOutlet weak var listTableView: UITableView!
     //how many cells(dataSource)
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return restaurantNames.count
+        return feedItems.count
     }
     //Delegate
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        /*let cellIdentifier = "datacell"
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
-        cell.textLabel?.text = restaurantNames[indexPath.row]
-        cell.accessoryType = .disclosureIndicator //小圖標
-        return cell*/
-        // Retrieve cell
-        let cellIdentifier: String = "BasicCell"
+        let cellIdentifier: String = "datacell"
         let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier)!
         // Get the location to be shown
         let item: LocationModel = feedItems[indexPath.row] as! LocationModel
