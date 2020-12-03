@@ -28,21 +28,20 @@ class TViewController: UIViewController,UITableViewDataSource,UITableViewDelegat
     }
     //Delegate
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cellIdentifier = "datacell"
+        /*let cellIdentifier = "datacell"
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
-        //let item: LocationModel = feedItems[indexPath.row] as! LocationModel
         cell.textLabel?.text = restaurantNames[indexPath.row]
         cell.accessoryType = .disclosureIndicator //小圖標
-        return cell
+        return cell*/
         // Retrieve cell
-        /*let cellIdentifier: String = "datacell"
-        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
+        let cellIdentifier: String = "BasicCell"
+        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier)!
         // Get the location to be shown
         let item: LocationModel = feedItems[indexPath.row] as! LocationModel
         // Get references to labels of cell
         cell.textLabel!.text = item.address
         
-        return cell*/
+        return cell
     }
     override func viewDidLoad() {
         super.viewDidLoad()
