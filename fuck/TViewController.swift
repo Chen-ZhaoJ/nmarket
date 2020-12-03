@@ -8,7 +8,16 @@
 
 import UIKit
 
-class TViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
+class TViewController: UIViewController,UITableViewDataSource,UITableViewDelegate, HomeModelProtocol {
+    
+    var feedItems: NSArray = NSArray()
+    var selectedLocation : LocationModel = LocationModel()
+    
+    func itemsDownloaded(items: NSArray) {
+        feedItems = items
+        self.listTableView.reloadData()
+    }
+    
     
     var restaurantNames = ["jj","pp"]
 
@@ -21,12 +30,28 @@ class TViewController: UIViewController,UITableViewDataSource,UITableViewDelegat
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellIdentifier = "datacell"
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
+        //let item: LocationModel = feedItems[indexPath.row] as! LocationModel
         cell.textLabel?.text = restaurantNames[indexPath.row]
         cell.accessoryType = .disclosureIndicator //小圖標
         return cell
+        // Retrieve cell
+        /*let cellIdentifier: String = "datacell"
+        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
+        // Get the location to be shown
+        let item: LocationModel = feedItems[indexPath.row] as! LocationModel
+        // Get references to labels of cell
+        cell.textLabel!.text = item.address
+        
+        return cell*/
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.listTableView.delegate = self
+        self.listTableView.dataSource = self
+        
+        let homeModel = HomeModel()
+        homeModel.delegate = self
+        homeModel.downloadItems()
         // Do any additional setup after loading the view.
     }
     /*
