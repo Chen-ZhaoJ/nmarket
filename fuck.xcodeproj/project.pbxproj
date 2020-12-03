@@ -13,6 +13,7 @@
 		1D9047B6251C92F600798359 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D9047B4251C92F600798359 /* Main.storyboard */; };
 		408F3D7A25226DC100A136E5 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408F3D7925226DC100A136E5 /* ARViewController.swift */; };
 		40AB25232526EDB80039E4D2 /* TViewDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AB25222526EDB80039E4D2 /* TViewDetailViewController.swift */; };
+		98C447832578CC96003B6CD6 /* CommendTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C447822578CC96003B6CD6 /* CommendTableViewController.swift */; };
 		B01C74402521D35E00F3BCA6 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C743F2521D35E00F3BCA6 /* HomeModel.swift */; };
 		B01C74422521D41D00F3BCA6 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C74412521D41D00F3BCA6 /* LocationModel.swift */; };
 		B07DF01F2484ED0900B3E5F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07DF01E2484ED0900B3E5F9 /* AppDelegate.swift */; };
@@ -51,6 +52,7 @@
 		1D9047B5251C92F600798359 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		408F3D7925226DC100A136E5 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		40AB25222526EDB80039E4D2 /* TViewDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TViewDetailViewController.swift; sourceTree = "<group>"; };
+		98C447822578CC96003B6CD6 /* CommendTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommendTableViewController.swift; sourceTree = "<group>"; };
 		B01C743F2521D35E00F3BCA6 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		B01C74412521D41D00F3BCA6 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		B07DF01B2484ED0900B3E5F9 /* fuck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fuck.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +138,7 @@
 				1D528DB42522018500716C12 /* TabBarController.swift */,
 				408F3D7925226DC100A136E5 /* ARViewController.swift */,
 				1D2E257D257782010022502F /* MenuTableViewController.swift */,
+				98C447822578CC96003B6CD6 /* CommendTableViewController.swift */,
 			);
 			path = fuck;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 			files = (
 				B07DF0552484EE2F00B3E5F9 /* ResetPassword.swift in Sources */,
 				1D9047A9251910CC00798359 /* TViewController.swift in Sources */,
+				98C447832578CC96003B6CD6 /* CommendTableViewController.swift in Sources */,
 				1D2E257E257782010022502F /* MenuTableViewController.swift in Sources */,
 				B07DF0232484ED0900B3E5F9 /* ViewController.swift in Sources */,
 				1D528DB52522018500716C12 /* TabBarController.swift in Sources */,

@@ -9,7 +9,6 @@
 import UIKit
 
 class TViewDetailViewController: UIViewController {
-    var selectedButton: UIButton!
     @IBOutlet var containerViews: [UIView]!
     @IBOutlet weak var change: UISegmentedControl!
     @IBAction func changePage(_ sender: UISegmentedControl) {
