@@ -404,7 +404,7 @@
         <scene sceneID="KPY-6Q-snZ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QMx-73-gU8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="list" image="list.dash" catalog="system" selectedImage="list.bullet" id="aRL-XY-pVt"/>
+                    <tabBarItem key="tabBarItem" title="list" image="list.bullet" catalog="system" selectedImage="list.dash" id="aRL-XY-pVt"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0GH-nf-dwO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
