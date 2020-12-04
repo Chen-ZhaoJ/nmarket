@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TViewController: UIViewController,UITableViewDataSource,UITableViewDelegate, HomeModelProtocol {
+class TViewController: UIViewController,UITableViewDataSource,UITableViewDelegate, HomeModelProtocol{
     
     var feedItems: NSArray = NSArray()
     var selectedLocation : LocationModel = LocationModel()
@@ -36,6 +36,9 @@ class TViewController: UIViewController,UITableViewDataSource,UITableViewDelegat
         
         return cell
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.listTableView.delegate = self
@@ -45,6 +48,9 @@ class TViewController: UIViewController,UITableViewDataSource,UITableViewDelegat
         homeModel.delegate = self
         homeModel.downloadItems()
         // Do any additional setup after loading the view.
+    }
+    override func awakeFromNib() {
+        super.awakeFromNib()
     }
     /*
     // MARK: - Navigation

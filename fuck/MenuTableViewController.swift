@@ -9,6 +9,8 @@
 import UIKit
 
 class MenuTableViewController: UITableViewController,HomeModelProtocol {
+   var receive = 0
+    
     @IBOutlet var listTableView: UITableView!
     var feedItems: NSArray = NSArray()
        var selectedLocation : Menu1Model = Menu1Model()
@@ -29,18 +31,32 @@ class MenuTableViewController: UITableViewController,HomeModelProtocol {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath)
         let item: Menu1Model = feedItems[indexPath.row] as! Menu1Model
-        cell.textLabel?.text = "菜名：" + item.name! + ", 價格：" +  item.price!
+        cell.textLabel?.text = "菜名：" + item.name! + " , 價格：" +  item.price!
             return cell
     }
-    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+    }
+
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         self.listTableView.delegate = self
         self.listTableView.dataSource = self
+
+        if (receive == 1){
+            var homemenu1Model = HomeMenu1Model()
+            homemenu1Model = HomeMenu1Model()
+            homemenu1Model.delegate = self
+            homemenu1Model.downloadItems()
+        }else if(receive == 2){
+            var homemenu2Model = HomeMenu2Model()
+            homemenu2Model = HomeMenu2Model()
+            homemenu2Model.delegate = self
+            homemenu2Model.downloadItems()
+        }
         
-        let homemenu1Model = HomeMenu1Model()
-        homemenu1Model.delegate = self
-        homemenu1Model.downloadItems()
         // Do any additional setup after loading the view.
     }
 
@@ -90,3 +106,10 @@ class MenuTableViewController: UITableViewController,HomeModelProtocol {
     */
 
 }
+//
+//  HomeModel.swift
+//  fuck
+//
+//  Created by Ariel on 2020/9/28.
+//  Copyright © 2020 Ariel. All rights reserved.
+//
