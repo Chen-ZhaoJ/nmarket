@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TViewController: UIViewController,UITableViewDataSource,UITableViewDelegate, HomeModelProtocol{
+class CViewController: UIViewController,UITableViewDataSource,UITableViewDelegate, HomeModelProtocol{
     
     var feedItems: NSArray = NSArray()
     var selectedLocation : LocationModel = LocationModel()
@@ -20,7 +20,8 @@ class TViewController: UIViewController,UITableViewDataSource,UITableViewDelegat
     
     
  
-    @IBOutlet weak var listTableView: UITableView!
+    @IBOutlet var listTableView: UITableView!
+    
     //how many cells(dataSource)
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return feedItems.count

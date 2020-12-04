@@ -9,31 +9,32 @@
 import UIKit
 
 class MenuTableViewController: UITableViewController,HomeModelProtocol {
-   var receive = 0
-    
-    @IBOutlet var listTableView: UITableView!
-    var feedItems: NSArray = NSArray()
-       var selectedLocation : Menu1Model = Menu1Model()
-    func itemsDownloaded(items: NSArray) {
-        feedItems = items
-        self.listTableView.reloadData()
-    }
-    
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
+    var receive = 0
+     
+     @IBOutlet var listTableView: UITableView!
+     var feedItems: NSArray = NSArray()
+        var selectedLocation : Menu1Model = Menu1Model()
+     func itemsDownloaded(items: NSArray) {
+         feedItems = items
+         self.listTableView.reloadData()
+     }
+     
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return feedItems.count
-    }
+     override func numberOfSections(in tableView: UITableView) -> Int {
+         return 1
+     }
 
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath)
-        let item: Menu1Model = feedItems[indexPath.row] as! Menu1Model
-        cell.textLabel?.text = "菜名：" + item.name! + " , 價格：" +  item.price!
-            return cell
-    }
+     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+         return feedItems.count
+     }
+
+     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+         let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath)
+         let item: Menu1Model = feedItems[indexPath.row] as! Menu1Model
+         cell.textLabel?.text = "菜名：" + item.name! + " , 價格：" +  item.price!
+             return cell
+     }
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -44,22 +45,31 @@ class MenuTableViewController: UITableViewController,HomeModelProtocol {
         super.viewDidLoad()
         self.listTableView.delegate = self
         self.listTableView.dataSource = self
-
-        if (receive == 1){
-            var homemenu1Model = HomeMenu1Model()
-            homemenu1Model = HomeMenu1Model()
+        if (receive == 0){
+            let homemenu1Model = HomeMenu1Model()
             homemenu1Model.delegate = self
             homemenu1Model.downloadItems()
-        }else if(receive == 2){
-            var homemenu2Model = HomeMenu2Model()
-            homemenu2Model = HomeMenu2Model()
+        }else if(receive == 1){
+            let homemenu2Model = HomeMenu2Model()
             homemenu2Model.delegate = self
             homemenu2Model.downloadItems()
+        }else if(receive == 2){
+            let homemenu3Model = HomeMenu3Model()
+            homemenu3Model.delegate = self
+            homemenu3Model.downloadItems()
+        }else if(receive == 3){
+            let homemenu4Model = HomeMenu4Model()
+            homemenu4Model.delegate = self
+            homemenu4Model.downloadItems()
+        }else if(receive == 4){
+            let homemenu5Model = HomeMenu5Model()
+            homemenu5Model.delegate = self
+            homemenu5Model.downloadItems()
         }
         
         // Do any additional setup after loading the view.
     }
-
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
