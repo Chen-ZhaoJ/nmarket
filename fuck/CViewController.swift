@@ -15,12 +15,12 @@ class CViewController: UIViewController,UITableViewDataSource,UITableViewDelegat
     
     func itemsDownloaded(items: NSArray) {
         feedItems = items
-        self.listTableView.reloadData()
+        self.commendTableView.reloadData()
     }
     
     
  
-    @IBOutlet var listTableView: UITableView!
+    @IBOutlet weak var commendTableView: UITableView!
     //how many cells(dataSource)
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return feedItems.count
@@ -46,8 +46,8 @@ class CViewController: UIViewController,UITableViewDataSource,UITableViewDelegat
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.listTableView.delegate = self
-        self.listTableView.dataSource = self
+        self.commendTableView.delegate = self
+        self.commendTableView.dataSource = self
         
         let homeModel = HomeModel()
         homeModel.delegate = self
