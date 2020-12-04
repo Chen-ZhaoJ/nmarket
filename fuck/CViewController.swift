@@ -27,7 +27,7 @@ class CViewController: UIViewController,UITableViewDataSource,UITableViewDelegat
     }
     //Delegate
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cellIdentifier: String = "datacell"
+        let cellIdentifier: String = "datacelll"
         let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier)!
         // Get the location to be shown
         let item: LocationModel = feedItems[indexPath.row] as! LocationModel

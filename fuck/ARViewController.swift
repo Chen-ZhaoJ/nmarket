@@ -74,8 +74,14 @@ extension ARViewController: ARSCNViewDelegate {
           self.label.text = "\(imageName)"
           let store = self.label.text
           
-          if (store?.caseInsensitiveCompare("little") == .orderedSame){
-              let next=self.storyboard?.instantiateViewController(withIdentifier:"store")
+       // let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        //let pagemenu = storyboard.instantiateViewController(withIdentifier: "pagemenu")  as! MenuTableViewController
+
+        //pagemenu.receive1 = store!
+        //self.present(pagemenu, animated: true, completion: nil)
+        
+          if (store?.caseInsensitiveCompare("chicken") == .orderedSame){
+              let next=self.storyboard?.instantiateViewController(withIdentifier:"pagemenu")
               self.present(next!, animated: true, completion: nil)
           }
         self.resetTrackingConfiguration()
