@@ -9,7 +9,7 @@ import UIKit
 
 class CommendTableViewController: UITableViewController {
     var commend = ["good","bad"]
-
+    var receive = 0
     override func viewDidLoad() {
         super.viewDidLoad()
     }

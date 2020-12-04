@@ -21,7 +21,6 @@ class CViewController: UIViewController,UITableViewDataSource,UITableViewDelegat
     
  
     @IBOutlet var listTableView: UITableView!
-    
     //how many cells(dataSource)
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return feedItems.count
@@ -39,10 +38,10 @@ class CViewController: UIViewController,UITableViewDataSource,UITableViewDelegat
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let pagemenu = storyboard.instantiateViewController(withIdentifier: "pagemenu")  as! MenuTableViewController
+        let pagecommend = storyboard.instantiateViewController(withIdentifier: "pagecommend")  as! CommendTableViewController
 
-        pagemenu.receive = indexPath.row
-        present(pagemenu, animated: true, completion: nil)
+        pagecommend.receive = indexPath.row
+        present(pagecommend, animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
